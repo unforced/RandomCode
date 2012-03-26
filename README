@@ -4,7 +4,7 @@ uncertainty.py:
 I wrote this because I was too lazy to calculate the uncertainties for my physics lab.
 Uses the computational method to calculate the uncertainty of a formula, given the formula, the variable values, and the uncertaintys.
 Use:
-import uncertainty
-uncertainty.calculateUncertainty(variables, uncertainties, formula)
-Ex: uncertainty.calculateUncertainty([1,2,3,4],[0.123, 0.541, 0.1, 0.3], "n[0]+n[1]*(n[2]/n[3])")
-Variables in the formula must be entered as n[x].
+python uncertainty.py variables uncertainties formula
+Separate the indiviudal values in variables and uncertainties with commas, and ensure there is a space between variables, uncertainties, and formula.
+Formula variables must be entered as n[x]
+Ex: python uncertainty.py 1,2,3,4 0.1,0.15,0.05,0.1 n[0]*n[1]+n[2]*n[3]

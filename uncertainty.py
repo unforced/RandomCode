@@ -1,4 +1,5 @@
 import parser
+import sys
 def calculateUncertainty(variables, uncertainties, formula):
     if (len(uncertainties) != len(variables)): 
         print 'Please input same number of variables as uncertainties'
@@ -26,3 +27,6 @@ def findValue(numbers,formula):
     n = numbers[:]
     return eval(code)
     #Still needs error checking for formula name errors.  Might add later.
+
+if __name__=="__main__":
+    calculateUncertainty(map(float, sys.argv[1].split(',')), map(float, sys.argv[2].split(',')), sys.argv[3])
