@@ -1,0 +1,10 @@
+This repository is just some random code I've written up.
+
+uncertainty.py:
+I wrote this because I was too lazy to calculate the uncertainties for my physics lab.
+Uses the computational method to calculate the uncertainty of a formula, given the formula, the variable values, and the uncertaintys.
+Use:
+import uncertainty
+uncertainty.calculateUncertainty(variables, uncertainties, formula)
+Ex: uncertainty.calculateUncertainty([1,2,3,4],[0.123, 0.541, 0.1, 0.3], "n[0]+n[1]*(n[2]/n[3])")
+Variables in the formula must be entered as n[x]
