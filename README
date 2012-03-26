@@ -1,4 +1,4 @@
-This repository is just some random code I've written up.
+This repository is just some random code I've written up. I'll describe what the individual files do below.
 
 uncertainty.py:
 I wrote this because I was too lazy to calculate the uncertainties for my physics lab.
