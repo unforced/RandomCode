@@ -15,6 +15,7 @@ def calculateUncertainty(variables, uncertainties, formula):
         totalUncertainty += uncertaintyDueTo[x]**2
     print "Total Uncertainty is {}".format(totalUncertainty**(0.5))
 
+
 def findValue(numbers,formula):
     code = parser.expr(formula).compile()
     n = numbers[:]
