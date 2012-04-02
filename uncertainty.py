@@ -1,3 +1,14 @@
+'''
+uncertainty.py:
+I wrote this because I was too lazy to calculate the uncertainties for my physics lab.
+Uses the computational method to calculate the uncertainty of a formula, given the formula, the variable values, and the uncertaintys.
+Use:
+python uncertainty.py variables uncertainties formula
+Separate the indiviudal values in variables and uncertainties with commas, and ensure there is a space between variables, uncertainties, and formula.
+Formula variables must be entered as n[x]
+Ex: python uncertainty.py 1,2,3,4 0.1,0.15,0.05,0.1 n[0]*n[1]+n[2]*n[3]
+'''
+
 import parser
 import sys
 def calculateUncertainty(variables, uncertainties, formula):
@@ -30,3 +41,5 @@ def findValue(numbers,formula):
 
 if __name__=="__main__":
     calculateUncertainty(map(float, sys.argv[1].split(',')), map(float, sys.argv[2].split(',')), sys.argv[3])
+
+

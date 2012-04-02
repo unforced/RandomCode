@@ -1,10 +1,2 @@
-This repository is just some random code I've written up. I'll describe what the individual files do below.
+This repository is just some random code I've written up. 
 
-uncertainty.py:
-I wrote this because I was too lazy to calculate the uncertainties for my physics lab.
-Uses the computational method to calculate the uncertainty of a formula, given the formula, the variable values, and the uncertaintys.
-Use:
-python uncertainty.py variables uncertainties formula
-Separate the indiviudal values in variables and uncertainties with commas, and ensure there is a space between variables, uncertainties, and formula.
-Formula variables must be entered as n[x]
-Ex: python uncertainty.py 1,2,3,4 0.1,0.15,0.05,0.1 n[0]*n[1]+n[2]*n[3]
