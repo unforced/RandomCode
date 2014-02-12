@@ -17,3 +17,8 @@ Used for physics labs, calculates uncertainty.
 
 findGoogle.rb, domains.csv, output.out:
 Quick thing I whipped up to get some information about the TLD's registered. domains.csv is the input and output.out is a list of how many domains each company registered(Name is because I wanted to see how many Google registered).
+
+dogemine.rb:
+Scrapes the dogehouse website to find the pool with the lowest load
+Then it kills any currently running miner and starts up a new one with the new pool
+Run it like so: `./dogemine.rb -u aaron -p icanhazpass -c "minerd.exe -t 5 -u User.worker -p workerpass -o"`

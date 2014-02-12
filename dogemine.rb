@@ -77,9 +77,12 @@ end
 
 def launch_miner
   url = get_best_url
-  if ProcTable.ps.none?{|p| p.cmdline.start_with? @cmd}
-    exec("#{@cmd} #{url}")
+
+  process = ProcTable.ps.find{|p| p.cmdline.start_with? @cmd}
+  if process
+    Process.kill('TERM', process.pid)
   end
+  exec("#{@cmd} #{url}")
 end
 
 launch_miner
